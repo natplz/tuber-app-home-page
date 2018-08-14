@@ -69,12 +69,12 @@
           </div>
       </div>
     </div>
-    
+ 
     <div class="container.fluid bg-dark">
       <div class="container text-white" id="about">
         <div class="sectionHeading">
           <h1>The latest in potato-sharing technology.</h1>
-          <p class="lead" id="aboutSubtitle">Your potatoes have never been so high-tech.</p>
+          <p id="aboutSubtitle">Your potatoes have never been so high-tech.</p>
         </div>
         <div class="row">
           <div class="col-md-4">
@@ -108,7 +108,7 @@
               <div class="card-body">
                 <i class="fa fa-car" aria-hidden="true"></i>
                 <h5 class="card-title">Potatoes driving potatoes.</h5>
-                <p class="card-text">Our self-driving prototype allows potatoes to be delivered, by other potatoes. Right to your doorstep. It's a revolutionary idea that's changing the very fabric of the potato industry.</p>
+                <p class="card-text">Our self-driving prototype allows potatoes to be delivered, by other potatoes. Right to your doorstep. It's a revolutionary idea that's changing the fabric of the potato industry.</p>
                 <a href="#">Read about our self-driving technology.</a>
               </div>
             </div>
@@ -121,7 +121,7 @@
     
     <div class="outerDiv">
       <div class="innerDiv">
-        <h1>Download it now.</h1>
+        <h1 id="download">Download it now.</h1>
         <a href="#">
           <img class="appStore" src="androidAppStore.png">
         </a>
@@ -144,6 +144,7 @@
       
       var jumboHeight = $("#color1").outerHeight();
 
+      parallax(); //This first call is in case page is refreshed with scroll already applied
       $(window).scroll(function(e){
           parallax();
       });
