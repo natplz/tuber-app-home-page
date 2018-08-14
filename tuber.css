@@ -11,6 +11,10 @@
   --spacing:           0px;
 }
 
+html {
+  font-size:1rem;
+}
+
 body {
   margin:0;
   padding:0;
@@ -81,6 +85,7 @@ nav a:hover {
   color:white;
   text-shadow: #444 0 1px 1px;
   background:transparent;
+
 }
 #tron{
   height:499px; /*Setting bottom margin and padding to zero don't get rid of 71px of white space at the bottom (unsure why). So I need to set the height to 71px shorter than background images */
@@ -89,11 +94,14 @@ nav a:hover {
   position:relative;
   z-index: 2;
   text-align: center;
+
 }
 #jumboText {
   font-family: "Raleway",sans-serif;
-  font-size:400%;
+  font-size:4rem;
 }
+
+
 hr {
   border-color:black;
 }
@@ -101,6 +109,12 @@ hr {
   text-align:center;
   padding-top:40px;
 }
+
+
+h1 {
+  font-size:2rem;
+}
+
 #aboutSubtitle {
   padding-bottom:20px;
 }
@@ -135,4 +149,22 @@ hr {
   width:350px;
   height:250px;
   border: 2px black solid;
+}
+
+
+/*----Media queries------*/
+/*Smartphones (portrait) */
+@media screen and (max-width:420px) {
+  #jumboText {
+    font-size:3rem;
+  }
+  h1 {
+    font-size:1.5rem;
+  }
+  .outerDiv {
+    padding:15px;
+  }
+  .innerDiv {
+    width:280px;
+  }
 }
